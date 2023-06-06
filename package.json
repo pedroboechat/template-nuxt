@@ -16,7 +16,7 @@
     "@nuxtjs/eslint-module": "4.0.2",
     "@types/node": "20.2.5",
     "@typescript-eslint/parser": "5.57.0",
-    "eslint": "8.41.0",
+    "eslint": "8.42.0",
     "eslint-config-prettier": "8.8.0",
     "eslint-plugin-prettier": "4.2.1",
     "nuxt": "3.5.2",
