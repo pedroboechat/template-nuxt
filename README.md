@@ -68,7 +68,7 @@ services:
 
 ```py
 # FRONTEND
-FRONTEND_HOST="localhost"
+FRONTEND_HOST="0.0.0.0"
 FRONTEND_PORT="3000"
 BASE_URL=
 ```
