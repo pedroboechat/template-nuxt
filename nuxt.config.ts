@@ -13,6 +13,7 @@ export default defineNuxtConfig({
       });
     },
     "@nuxtjs/eslint-module",
+    "@nuxtjs/sitemap",
   ],
   vite: {
     vue: {
