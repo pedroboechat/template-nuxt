@@ -5,6 +5,7 @@ export default defineNuxtConfig({
   build: {
     transpile: ["vuetify"],
   },
+  compatibilityDate: "2024-08-11",
   modules: [
     (_options, nuxt) => {
       nuxt.hooks.hook("vite:extendConfig", (config) => {
@@ -12,7 +13,6 @@ export default defineNuxtConfig({
         config.plugins.push(vuetify({ autoImport: true }));
       });
     },
-    "@nuxtjs/eslint-module",
     "@nuxtjs/sitemap",
   ],
   vite: {
