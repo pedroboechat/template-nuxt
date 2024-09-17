@@ -6,6 +6,7 @@ export default defineNuxtConfig({
     transpile: ["vuetify"],
   },
   compatibilityDate: "2024-09-17",
+  devtools: { enabled: true },
   eslint: {
     checker: true,
   },
