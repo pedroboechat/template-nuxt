@@ -18,6 +18,8 @@ export default defineNuxtConfig({
       });
     },
     "@nuxt/eslint",
+    "@nuxt/fonts",
+    "@nuxt/scripts",
     "@nuxtjs/sitemap",
   ],
   vite: {
