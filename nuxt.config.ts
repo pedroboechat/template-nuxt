@@ -5,14 +5,18 @@ export default defineNuxtConfig({
   build: {
     transpile: ["vuetify"],
   },
-  compatibilityDate: "2024-08-11",
+  compatibilityDate: "2024-09-17",
+  eslint: {
+    checker: true,
+  },
   modules: [
     (_options, nuxt) => {
       nuxt.hooks.hook("vite:extendConfig", (config) => {
-        // @ts-expect-error
+        // @ts-expect-error: Undefined type error
         config.plugins.push(vuetify({ autoImport: true }));
       });
     },
+    "@nuxt/eslint",
     "@nuxtjs/sitemap",
   ],
   vite: {
