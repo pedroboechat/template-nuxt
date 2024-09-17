@@ -1,5 +1,5 @@
-# USING NODE 20.11.1 LTS
-FROM node:20.11.1-alpine3.19
+# USING NODE 20.17.0 LTS
+FROM node:20.17.0-alpine3.20
 
 # SET WORKDIR
 WORKDIR /srv/app
