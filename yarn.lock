@@ -1116,7 +1116,7 @@
     "@typescript-eslint/types" "^8.5.0"
     "@typescript-eslint/utils" "^8.5.0"
 
-"@nuxt/eslint@^0.5.7":
+"@nuxt/eslint@0.5.7":
   version "0.5.7"
   resolved "https://registry.yarnpkg.com/@nuxt/eslint/-/eslint-0.5.7.tgz#611a7689a5d9e48e106977cdd55d36333c719140"
   integrity sha512-t2GoH8BIfDVysZ5Y9kPBTnT9rcUSJcXTeY5Fa93//qmHJba3kIpoETy3qJe/v75R1giGgIPO+Iydt6uXZ2jjJQ==

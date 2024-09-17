@@ -4,15 +4,15 @@
 
 This template uses [Nuxt 3](https://nuxt.com/) and [Typescript](https://www.typescriptlang.org/) with the following plugins:
 
-- [Vuetify 3](https://vuetifyjs.com/) - *"Vuetify is a no design skills required UI Library with beautifully handcrafted Vue Components."*
+- [Vuetify 3](https://vuetifyjs.com/) - _"Vuetify is a no design skills required UI Library with beautifully handcrafted Vue Components."_
 
-- [Plinia](https://pinia.vuejs.org/) - *"The intuitive store for Vue.js. Type Safe, Extensible, and Modular by design. Forget you are even using a store."*
+- [Plinia](https://pinia.vuejs.org/) - _"The intuitive store for Vue.js. Type Safe, Extensible, and Modular by design. Forget you are even using a store."_
 
 As development plugins, this template also uses:
 
-- [Prettier](https://prettier.io/) - *"An opinionated code formatter."*
+- [Prettier](https://prettier.io/) - _"An opinionated code formatter."_
 
-- [ESLint](https://eslint.org/) - *"The pluggable linting utility for JavaScript and JSX."*
+- [ESLint](https://eslint.org/) - _"The pluggable linting utility for JavaScript and JSX."_
 
 ## Environment variables
 
