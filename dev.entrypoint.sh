@@ -1,10 +1,8 @@
 #!/bin/bash
 cd /srv/app
 
-if [ ! -d "/srv/app/node_modules" ]; then
-    echo ">> Running `yarn install`"
-    yarn install
-fi
+echo ">> Running `yarn install`"
+yarn install
 
 echo ">> Starting Nuxt"
 yarn dev
