@@ -13,22 +13,22 @@
   },
   "devDependencies": {
     "@nuxtjs/eslint-config-typescript": "12.1.0",
-    "@nuxtjs/sitemap": "5.3.5",
-    "@types/node": "22.2.0",
-    "@typescript-eslint/parser": "8.0.1",
-    "eslint": "9.9.0",
+    "@nuxtjs/sitemap": "6.0.1",
+    "@types/node": "22.5.5",
+    "@typescript-eslint/parser": "8.6.0",
+    "eslint": "9.10.0",
     "eslint-config-prettier": "9.1.0",
     "eslint-plugin-prettier": "5.2.1",
-    "nuxt": "3.12.4",
+    "nuxt": "3.13.2",
     "prettier": "3.3.3",
-    "typescript": "5.5.4",
+    "typescript": "5.6.2",
     "vite-plugin-vuetify": "2.0.4",
-    "vuetify": "3.6.14"
+    "vuetify": "3.7.1"
   },
   "dependencies": {
     "@mdi/font": "7.4.47",
-    "@pinia/nuxt": "0.5.3",
-    "maska": "3.0.2",
-    "sass": "1.77.8"
+    "@pinia/nuxt": "0.5.4",
+    "maska": "3.0.2", 
+    "sass": "1.78.0"
   }
 }
