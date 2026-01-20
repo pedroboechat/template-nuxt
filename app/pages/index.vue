@@ -1,5 +1,5 @@
 <template>
   <v-container>
-    <h1>Hello world!</h1>
+    <h1>{{ $t("hello-world") }}</h1>
   </v-container>
 </template>
