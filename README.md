@@ -68,7 +68,7 @@ A modern, production-ready Nuxt 4 template with TypeScript, Vuetify 3, Pinia, an
    pnpm install
    ```
 
-   *Alternatively, use `npm install` or `yarn install`*
+   _Alternatively, use `npm install` or `yarn install`_
 
 3. Set up environment variables:
 
