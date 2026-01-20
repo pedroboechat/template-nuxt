@@ -6,6 +6,10 @@ export default defineNuxtConfig({
   build: {
     transpile: ["vuetify"],
   },
+  colorMode: {
+    preference: "system",
+    fallback: "light",
+  },
   compatibilityDate: "2026-01-20",
   css: ["~/assets/css/main.css"],
   devtools: { enabled: true },
@@ -32,6 +36,7 @@ export default defineNuxtConfig({
     "@nuxt/scripts",
     "@nuxtjs/sitemap",
     "@nuxt/test-utils",
+    "@nuxtjs/color-mode",
     "@nuxtjs/i18n",
   ],
   routeRules: {
