@@ -13,7 +13,13 @@ export default [
   // TypeScript config for files that are in the project
   {
     files: ["**/*.ts"],
-    ignores: [".nuxt/**", "**/*.d.ts", "app/plugins/*.ts", "nuxt.config.ts"],
+    ignores: [
+      ".nuxt/**",
+      "**/*.d.ts",
+      "app/plugins/*.ts",
+      "app/composables/*.ts",
+      "nuxt.config.ts",
+    ],
     languageOptions: {
       parser: typescriptParser,
       parserOptions: {
@@ -29,7 +35,7 @@ export default [
   },
   // TypeScript config for plugin files (no project requirement)
   {
-    files: ["app/plugins/*.ts", "nuxt.config.ts"],
+    files: ["app/plugins/*.ts", "app/composables/*.ts", "nuxt.config.ts"],
     languageOptions: {
       parser: typescriptParser,
     },
