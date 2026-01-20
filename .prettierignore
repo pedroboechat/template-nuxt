@@ -7,3 +7,6 @@ node_modules
 .env
 dist
 .DS_Store
+pnpm-lock.yaml
+pnpm-workspace.yaml
+nuxt.config.ts
