@@ -2,7 +2,7 @@
 
 ## Features
 
-This template uses [Nuxt 3](https://nuxt.com/) and [Typescript](https://www.typescriptlang.org/) with the following plugins:
+This template uses [Nuxt 4](https://nuxt.com/) and [Typescript](https://www.typescriptlang.org/) with the following plugins:
 
 - [Vuetify 3](https://vuetifyjs.com/) - _"Vuetify is a no design skills required UI Library with beautifully handcrafted Vue Components."_
 
