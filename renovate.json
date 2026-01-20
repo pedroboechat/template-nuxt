@@ -1,0 +1,67 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Default config for Nuxt repositories",
+  "extends": [
+    "config:recommended",
+    "group:allNonMajor",
+    ":maintainLockFilesWeekly",
+    ":semanticCommitTypeAll(chore)"
+  ],
+  "meteor": {
+    "enabled": false
+  },
+  "ignoreDeps": ["node"],
+  "lockFileMaintenance": {
+    "enabled": true
+  },
+  "rangeStrategy": "bump",
+  "npm": {
+    "commitMessageTopic": "{{prettyDepType}} {{depName}}"
+  },
+  "schedule": ["on Monday"],
+  "packageRules": [
+    {
+      "enabled": false,
+      "groupName": "nuxt framework",
+      "groupSlug": "nuxt",
+      "matchDepTypes": ["resolutions"],
+      "matchPackageNames": [
+        "nuxt",
+        "nuxt3",
+        "nuxt-nightly",
+        "@nuxt/schema",
+        "@nuxt/kit",
+        "@nuxt/vite-builder",
+        "@nuxt/webpack-builder",
+        "@nuxt/schema-nightly",
+        "@nuxt/kit-nightly",
+        "@nuxt/vite-builder-nightly",
+        "@nuxt/webpack-builder-nightly",
+        "@nuxt/babel-preset-app",
+        "@nuxt/builder",
+        "@nuxt/config",
+        "@nuxt/core",
+        "@nuxt/generator",
+        "@nuxt/server",
+        "@nuxt/types",
+        "@nuxt/utils",
+        "@nuxt/vue-app",
+        "@nuxt/vue-renderer",
+        "@nuxt/webpack",
+        "@nuxt/babel-preset-app-edge",
+        "@nuxt/builder-edge",
+        "@nuxt/config-edge",
+        "@nuxt/core-edge",
+        "@nuxt/generator-edge",
+        "@nuxt/server-edge",
+        "@nuxt/types-edge",
+        "@nuxt/utils-edge",
+        "@nuxt/vue-app-edge",
+        "@nuxt/vue-renderer-edge",
+        "@nuxt/webpack-edge"
+      ],
+      "schedule": ["* * * * *"]
+    }
+  ],
+  "postUpdateOptions": ["pnpmDedupe"]
+}
