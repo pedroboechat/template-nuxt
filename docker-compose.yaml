@@ -1,0 +1,15 @@
+services:
+  frontend:
+    build:
+      context: "."
+      dockerfile: "./container/dev.Dockerfile"
+    container_name: "frontend"
+    restart: "unless-stopped"
+    environment:
+      - "HOST=$FRONTEND_HOST"
+      - "PORT=$FRONTEND_PORT"
+      - "NUXT_PUBLIC_BASE_URL=$BASE_URL"
+    ports:
+      - "$FRONTEND_PORT:$FRONTEND_PORT"
+    volumes:
+      - "./frontend:/srv/app"
