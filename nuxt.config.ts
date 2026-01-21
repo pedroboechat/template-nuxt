@@ -42,6 +42,11 @@ export default defineNuxtConfig({
   routeRules: {
     "/": { prerender: true },
   },
+  runtimeConfig: {
+    public: {
+      apiBaseURL: process.env.NUXT_PUBLIC_API_BASE_URL,
+    },
+  },
   vite: {
     vue: {
       template: {

@@ -6,10 +6,12 @@ services:
     container_name: "frontend"
     restart: "unless-stopped"
     environment:
-      - "HOST=$FRONTEND_HOST"
-      - "PORT=$FRONTEND_PORT"
-      - "NUXT_PUBLIC_BASE_URL=$BASE_URL"
+      - "HOST=${FRONTEND_HOST}"
+      - "PORT=${FRONTEND_PORT}"
+      - "NUXT_BASE_URL=${BASE_URL}"
+      - "NUXT_APP_BASE_URL=${API_BASE_URL}"
+      - "NUXT_PUBLIC_BASE_URL=${BASE_URL}"
     ports:
-      - "$FRONTEND_PORT:$FRONTEND_PORT"
+      - "${FRONTEND_PORT}:${FRONTEND_PORT}"
     volumes:
       - "./frontend:/srv/app"

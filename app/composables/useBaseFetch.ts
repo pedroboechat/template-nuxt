@@ -24,16 +24,17 @@ import { defu } from "defu";
  * });
  */
 export function useBaseFetch<T>(url: string, options: UseFetchOptions<T> = {}) {
-  const config = useRuntimeConfig();
+  // Get runtime configuration
+  const runtimeConfig = useRuntimeConfig();
 
   // Default options that will be applied to all requests
   const defaults: UseFetchOptions<T> = {};
 
   // Set baseURL from runtime config if available
-  // Note: The runtime config should have `public.baseURL` defined
-  // in nuxt.config.ts or the `NUXT_PUBLIC_BASE_URL` environment set
-  if (config.public.baseURL) {
-    defaults.baseURL = config.public.baseURL as string;
+  // Note: The runtime config should have `public.apiBaseURL` defined
+  // in nuxt.config.ts or the `NUXT_PUBLIC_API_BASE_URL` environment set
+  if (runtimeConfig.public.apiBaseURL) {
+    defaults.baseURL = runtimeConfig.public.apiBaseURL as string;
   }
 
   // Merge user options with defaults (user options take precedence)
