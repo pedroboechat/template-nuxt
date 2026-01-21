@@ -18,3 +18,17 @@
     </v-footer>
   </v-app>
 </template>
+
+<script setup>
+// Import libraries
+import { defu } from "defu";
+
+// Set global head
+const globalHead = defu(
+  {
+    title: $t("!head-title"),
+  },
+  useLocaleHead().value,
+);
+useHead(globalHead);
+</script>

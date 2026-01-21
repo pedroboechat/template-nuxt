@@ -17,8 +17,11 @@ export default defineNuxtConfig({
     checker: true,
   },
   i18n: {
+    baseUrl: process.env.NUXT_BASE_URL || "http://localhost:3000",
     defaultLocale: "en",
-    locales: [{ code: "en", name: "English", file: "en.json" }],
+    langDir: "locales",
+    locales: [{ code: "en", language: "en", name: "English", file: "en.json" }],
+    restructureDir: "i18n",
   },
   modules: [
     (_options, nuxt) => {
